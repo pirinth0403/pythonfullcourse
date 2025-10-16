@@ -1,9 +1,3 @@
-def main():
-    # Your main program logic here
-    print("Hello, GitHub!")
-    for i in range(5):
-        print(f"Number {i}")
+name = [5, 10, 15, 25]
+print(name)
 
-# This ensures main() runs only when this file is executed directly
-if __name__ == "__main__":
-    main()
