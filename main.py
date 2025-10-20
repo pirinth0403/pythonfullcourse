@@ -46,10 +46,20 @@ while Position < end_position:
     if Position == end_position:
         print("U reached end of game") """
 ### FOR LOOP
-enemy_positions = [5, 10, 15 ,20]
+"""enemy_positions = [5, 10, 15 ,20]
 
 for enemy_position in enemy_positions:
     print(enemy_position)
 
 for i in range(0,5):
-    print("Hello")
+    print("Hello")"""
+
+###function
+position = 100
+def move_player(position,amount):
+    #global position
+    position += amount
+    return position
+
+position=move_player(position,-30)
+print(position)
