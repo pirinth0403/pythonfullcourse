@@ -32,7 +32,7 @@ else:
     print("invalid key") """
 
 # WHILE LOOP
-Position = 0
+"""Position = 0
 end_position = 10
 Enemy_position = 8
 
@@ -44,4 +44,12 @@ while Position < end_position:
         break
 
     if Position == end_position:
-        print("U reached end of game")
+        print("U reached end of game") """
+### FOR LOOP
+enemy_positions = [5, 10, 15 ,20]
+
+for enemy_position in enemy_positions:
+    print(enemy_position)
+
+for i in range(0,5):
+    print("Hello")
