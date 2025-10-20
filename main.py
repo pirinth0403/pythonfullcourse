@@ -1,3 +1,4 @@
+"""
 high_score = ("NIMISH" , 120)
 print(high_score)
 
@@ -14,4 +15,17 @@ print("HOLLY" in high_score)
 print(name[0])
 print(name[0:2])
 print("HOL" in name)
-print(len(name))
+print(len(name)) """
+
+"""# DICTIONARIES
+actions = {"r":1, "l":-1}
+print(actions) """
+
+# IF CONDITIONS
+KEY = "L"
+if KEY == "R":
+    print("move right")
+elif KEY == "L":
+    print("move left")
+else:
+    print("invalid key")
