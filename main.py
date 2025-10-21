@@ -55,11 +55,27 @@ for i in range(0,5):
     print("Hello")"""
 
 ###function
-position = 100
+"""position = 100
 def move_player(position,amount):
     #global position
     position += amount
     return position
 
 position=move_player(position,-30)
-print(position)
+print(position)"""
+##object and variables
+
+class GameObject:
+    def __init__(self,name,x_position,y_position):
+        self.name = name
+        self.x_position = x_position
+        self.y_position = y_position
+
+game_object = GameObject("Ragulan",10,20)
+print(game_object.name)
+print(game_object.x_position)
+print(game_object.y_position)
+game_object.name = "pirinthapan"
+print(game_object.name)
+print(game_object.x_position)
+print(game_object.y_position)
