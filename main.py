@@ -63,19 +63,44 @@ def move_player(position,amount):
 
 position=move_player(position,-30)
 print(position)"""
-##object and variables
+##inheritance
 
 class GameObject:
     def __init__(self,name,x_position,y_position):
         self.name = name
         self.x_position = x_position
         self.y_position = y_position
+    def move(self,by_x_amount,by_y_amount):
+        self.x_position += by_x_amount
+        self.y_position += by_y_amount
+class Enemy (GameObject):
+    def __init__(self,name,x_position,y_position,health):
+        super().__init__(name,x_position,y_position)
+        self.health = health
+    def take_damage(self,amount):
+        self.health -= amount
+
+
 
 game_object = GameObject("Ragulan",10,20)
 print(game_object.name)
 print(game_object.x_position)
 print(game_object.y_position)
+enemy = Enemy("printh",20,30,190)
+print(enemy.name)
+print(enemy.x_position)
+print(enemy.y_position)
+print(enemy.health)
+
+
+"""game_object.move(5,10)
 game_object.name = "pirinthapan"
 print(game_object.name)
 print(game_object.x_position)
-print(game_object.y_position)
+print(game_object.y_position)"""
+
+
+
+
+
+
