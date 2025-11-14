@@ -1,18 +1,19 @@
-if __name__ == '__main__':
-    n = int(input())
-    student_marks = {}
-    for _ in range(n):
-        name, *line = input().split()
-        scores = list(map(float, line))
-        student_marks[name] = scores
-    query_name = input()
-    # get the marks of the queried student
-    marks = student_marks[query_name]
-    # calculate the average
-    average = sum(marks)/len(marks)
+def swap_case(s):
+    result = ""
+    for char in s:
+        if char.islower():
+            result += char.upper()
+        elif char.isupper():
+            result += char.lower()
+        else:
+            result += char
+    return result
 
-    #print with 2 decimal places
-    print(f"{average:.2f}")
+s = input("Enter a string: ")
+result = swap_case(s)
+print(result)
+
+
 
 
 
